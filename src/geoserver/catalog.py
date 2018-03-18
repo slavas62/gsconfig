@@ -505,7 +505,7 @@ class Catalog(object):
     def create_coveragestore_external_geotiff(self, name, data, workspace=None, overwrite=False):
         self._create_coveragestore(name, data, workspace=workspace, overwrite=overwrite, external=True)
 
-    def _create_coveragestore(self, name, data, workspace=None, overwrite=False, external=False):
+    def _create_coveragestore(self, name, data, workspace=None, overwrite=False, external=False, ext="geotiff"):
         if not overwrite:
             store = self.get_store(name, workspace)
             if store is not None:
@@ -518,7 +518,6 @@ class Catalog(object):
             workspace = self.get_default_workspace()
 
         archive = None
-        ext = "geotiff"
         contet_type = "image/tiff" if not external else "text/plain"
         store_type = "file." if not external else "external."
 
