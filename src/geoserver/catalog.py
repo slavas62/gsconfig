@@ -513,6 +513,9 @@ class Catalog(object):
                 if workspace:
                     msg += " in " + str(workspace)
                 raise ConflictingDataError(msg)
+        
+        if ext is None:
+            ext = "geotiff"
 
         if workspace is None:
             workspace = self.get_default_workspace()
