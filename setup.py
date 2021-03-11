@@ -11,13 +11,14 @@ except IOError,e:
 setup(name = "gsconfig",
     version = "0.6.11",
     description = "GeoServer REST Configuration",
-    long_description = readme_text,
+    long_description = '',
     keywords = "GeoServer REST Configuration",
     license = "MIT",
     url = "http://github.com/opengeo/gsconfig.py",
     author = "David Winslow, Sebastian Benthall",
     author_email = "dwinslow@opengeo.org",
-    install_requires = ['httplib2>=0.7.4',
+    install_requires = [
+        'httplib2>=0.7.4',
         'gisdata==0.5.4'
     ],
     package_dir = {'':'src'},
