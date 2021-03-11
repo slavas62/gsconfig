@@ -2,12 +2,12 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup, find_packages
-
+'''
 try:
     readme_text = file('README.rst', 'rb').read()
 except IOError,e:
     readme_text = ''
-
+'''
 setup(name = "gsconfig",
     version = "0.6.11",
     description = "GeoServer REST Configuration",
