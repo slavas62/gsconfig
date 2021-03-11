@@ -4,7 +4,7 @@
 from setuptools import setup, find_packages
 
 try:
-    readme_text = file('README.rst', 'rb').read()
+    readme_text = open('README.rst', 'rb').read()
 except IOError:
     readme_text = ''
 
