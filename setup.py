@@ -5,13 +5,13 @@ from setuptools import setup, find_packages
 '''
 try:
     readme_text = file('README.rst', 'rb').read()
-except IOError,e:
+except IOError:
     readme_text = ''
 '''
 setup(name = "gsconfig",
     version = "0.6.11",
     description = "GeoServer REST Configuration",
-    long_description = '',
+    long_description = readme_text,
     keywords = "GeoServer REST Configuration",
     license = "MIT",
     url = "http://github.com/opengeo/gsconfig.py",
