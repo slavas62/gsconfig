@@ -7,6 +7,7 @@ try:
     readme_text = open('README.rst', 'rb').read()
 except IOError:
     readme_text = ''
+print(readme_text)
 
 setup(name = "gsconfig",
     version = "0.6.12",
